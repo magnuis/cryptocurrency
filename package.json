@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "axios": "^0.25.0",
+    "react-css-grid": "^2.0.0-0"
+  }
+}
