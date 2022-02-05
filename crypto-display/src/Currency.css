@@ -36,22 +36,7 @@
 .currency-symbol {
   text-transform: uppercase;
 }
-.currency-data {
-  display: flex;
-  text-align: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.currency-price {
-  width: 110px;
-  padding: 24px;
-}
-.currency-percent {
-  display: flex;
-  align-items: center;
-  padding: 24px;
-  width: 100%;
-}
+
 .red {
   color: #f00606;
 }

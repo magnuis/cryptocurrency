@@ -1,10 +1,12 @@
+import "./CurrencyFilter.css";
+
 const CurrencyFilter = (props) => {
   const dropDownChangeHandler = (event) => {
     props.onChangeFilter(event.target.value);
   };
 
   return (
-    <div>
+    <div className="currencyfilter">
       <label>Choose sorting property: </label>
       <select value={props.selected} onChange={dropDownChangeHandler}>
         <option value="name">Alphabetically</option>

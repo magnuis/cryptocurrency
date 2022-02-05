@@ -5,6 +5,9 @@ import Popup from "./Popup";
 const Currency = (props) => {
   const [popup, setPopup] = useState(false);
 
+  // const symbol = String(props.symbol).toUpperCase;
+  const symbol = String(props.symbol);
+
   return (
     <div onClick={() => setPopup(true)}>
       <div className="currency-container">
@@ -21,22 +24,24 @@ const Currency = (props) => {
       <Popup trigger={popup} setTrigger={setPopup}>
         <img src={props.image} />
         <h1>
-          {props.name} ({props.symbol})
+          {props.name} ({symbol})
         </h1>
         <h3>Current value: ${props.price}</h3>
-        <h3>Change of value last 24H: {props.priceChange}%</h3>
+        <h3>
+          Change of value last 24H:
+          {
+            <p>
+              {props.priceChange < 0 ? (
+                <p className="red">{props.priceChange.toFixed(2)}%</p>
+              ) : (
+                <p className="green">{props.priceChange.toFixed(2)}%</p>
+              )}
+            </p>
+          }
+        </h3>
       </Popup>
     </div>
   );
 };
 
 export default Currency;
-/*
-<p>
-  {props.priceChange < 0 ? (
-    <p className="coin-percent red">{props.priceChange.toFixed(2)}%</p>
-  ) : (
-    <p className="coin-percent green">{props.priceChange.toFixed(2)}%</p>
-  )}
-</p>;
-*/

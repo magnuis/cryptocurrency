@@ -1,9 +1,4 @@
 .currency-list {
-  /*display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  align-items: center;
-  */
   padding-bottom: 50px;
   position: absolute;
   right: 10px;
@@ -14,9 +9,4 @@
 
   border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-}
-
-.dropdown {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

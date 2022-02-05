@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import logo from "./logo.svg";
 import "./App.css";
-import Card from "./Card";
 import CurrencyList from "./CurrencyList";
-import Currency from "./Currency";
-
-import Grid from "react-css-grid";
 
 function App() {
   const [currencies, setCurrencies] = useState([]);
@@ -23,19 +18,10 @@ function App() {
 
   return (
     <div className="App">
-      <CurrencyList className="currencies" items={currencies} />
-
       <header className="App-header">
         <h1>Krypto for dummies</h1>
-
-        <p>Hvilken kryptovaluta vil du lære mer om?</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
       </header>
+      <CurrencyList className="currencies" items={currencies} />
     </div>
   );
 }
