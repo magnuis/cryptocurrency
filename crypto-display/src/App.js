@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Krypto for dummies</h1>
+        <h1 className="App-h1">Krypto for dummies</h1>
       </header>
       <CurrencyList className="currencies" items={currencies} />
     </div>
