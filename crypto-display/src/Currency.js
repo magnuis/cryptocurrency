@@ -24,7 +24,7 @@ const Currency = (props) => {
       <Popup trigger={popup} setTrigger={setPopup}>
         <img src={props.image} />
         <h1>
-          {props.name} ({symbol})
+          {props.name} ({symbol.toString().toUpperCase()})
         </h1>
         <h3>Current value: ${props.price}</h3>
         <h3>
