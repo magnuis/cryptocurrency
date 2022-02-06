@@ -9,7 +9,7 @@ const Currency = (props) => {
   const symbol = String(props.symbol);
 
   return (
-    <div onClick={() => setPopup(true)}>
+    <div onClick={() => setPopup(true)} style={{ cursor: "pointer" }}>
       <div className="currency-container">
         <div className="currency-row">
           <div className="currency">

@@ -18,7 +18,13 @@ const CurrencyList = (props) => {
     }
     return function (a, b) {
       var result =
-        a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
+        a[property].toString().toLowerCase() <
+        b[property].toString().toLowerCase()
+          ? -1
+          : a[property].toString().toLowerCase() >
+            b[property].toString().toLowerCase()
+          ? 1
+          : 0;
       return result * sortOrder;
     };
   }
