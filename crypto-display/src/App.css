@@ -12,3 +12,8 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
+
+.App-h1 {
+  position: absolute;
+  top: 24px;
+}
